@@ -1,3 +1,7 @@
-Things to remember:
+VARS you need to set:
 
-uWSGI manages the 
+export MAIL_USERNAME=
+export MAIL_PASSWORD=
+export MAIL_RECIPIENT=
+export MAIL_DEFAULT_SENDER=
+export RF-FLASK-DIR=
