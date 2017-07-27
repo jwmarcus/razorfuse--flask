@@ -67,7 +67,7 @@ def take_submission():
     return 'WARN: Invalid submission type. Discarding.', 405
 
 def send_message(payload):
-    msg = Message()
+    msg = Message(subject="New Form Submission on Razorfuse")
     msg.add_recipient(MAIL_RECIPIENT)
 
     msg.body = ""
