@@ -3,7 +3,7 @@ Description=uWSGI instance to serve razorfuse webform handler
 
 [Service]
 ExecStartPre=/usr/bin/bash -c 'mkdir -p /run/uwsgi; chown pi:nginx /run/uwsgi'
-ExecStart=/usr/bin/bash -c 'cd /home/pi/dev/src/razorfuse-flask; source env/bin/activate; uwsgi --ini uwsgi.ini'
+ExecStart=/usr/bin/bash -c 'cd /home/pi/dev/src/razorfuse-flask; source env/bin/activate; source /etc/profile.d/setvars.sh; uwsgi --ini uwsgi.ini'
 
 [Install]
 WantedBy=multi-user.target
