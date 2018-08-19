@@ -20,11 +20,11 @@ MAIL_RECIPIENT = os.environ.get('MAIL_RECIPIENT')
 
 mail = Mail(app)
 
-@app.route('/', methods=['GET'])
+@app.route('/razorfuse-flask/', methods=['GET'])
 def respond():
     return "OK", 200
 
-@app.route('/', methods=['POST'])
+@app.route('/razorfuse-flask/', methods=['POST'])
 def take_submission():
     required_keys = [
         'form_name', 'form_email', 'form_num_mod',
